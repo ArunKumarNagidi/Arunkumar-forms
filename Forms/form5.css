@@ -1,0 +1,112 @@
+.container{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: repeat(6, 1fr);
+			grid-column-gap: 50px;
+			grid-row-gap: 20px;
+			padding: 20px;
+			width: 1024px;
+			margin: auto;
+}
+.employee_form_heading{
+			background-color: #ebebeb;
+			width: 500px;
+			margin: auto;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 0px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+/*			font-family: URW Grotesk;*/
+
+		}
+		.employee_form_heading h2{
+			margin: 0px;
+		}
+		.grid-item1{
+			grid-column-start: 1 ;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 5;
+			background-color: #ebebeb;
+		}
+		.grid-item2{
+			grid-column-start: 2 ;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 3;
+			background-color: #ebebeb;
+		}
+		.grid-item3{
+			grid-column-start: 2 ;
+			grid-column-end: 3;
+			grid-row-start: 3;
+			grid-row-end: 5;
+			background-color: #ebebeb;
+		}
+		.grid-item4{
+			grid-column-start: -2 ;
+			grid-column-end: -1;
+			grid-row-start: 5;
+			grid-row-end: -1;
+			background-color: #ebebeb;
+		}
+		.grid-item5{
+			grid-column-start: 1 ;
+			grid-column-end: 2;
+			grid-row-start: 5;
+			grid-row-end: 6;
+			background-color: #ebebeb;
+		}
+
+
+.form_h4{
+	background-color: #c2c0c0;
+	height: 25px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+.form_h4 h4{
+	margin-top: 0px;
+	padding-top: 5px;
+}
+
+.form_table{
+	width: 100%;
+/*	padding-left: 10px;*/
+	border-collapse: collapse;
+	font-style: italic;
+
+}
+.form_table td{
+	padding-left: 10px;
+
+}
+.form_table textarea{
+	width: 320px;
+	height: 50px;
+	border: 2px solid black;
+}
+.input_box{
+	border-collapse: collapse;
+    height: 20px;
+    width: 320px;
+    border: 2px solid black;
+}
+.form_B_C_input{
+	width: 250px;
+	height: 20px;
+	border: 2px solid black;
+}
+#id_experience{
+	width: 75px;
+	border: 2px solid black;
+}
+.hr_head{
+	height: 25px;
+	padding-left: 10px;
+}
+
+#id_hr,#id_hiring_date{
+	border: 2px solid black;
+}

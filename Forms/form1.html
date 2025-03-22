@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background-color: #b2babb;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .container {
+            width: 600px;
+            background-color: white;
+            margin:auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        form h2, form p {
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
+        form h3 {
+            background-color: #b2babb;
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
+        .form-section {
+            background-color: #f2f4f4;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .form-table {
+            width: 100%;
+        }
+        .form-table td {
+            padding: 5px;
+        }
+        .form-table td:first-child {
+            text-align: right;
+            width: 40%;
+        }
+        .form-table input,
+        .form-table select {
+            width: 100%;
+            max-width: 300px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons input {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>JobSearch.com</h1>
+        </header>
+
+        <form>
+            <h2>Create Your Account</h2>
+            <p style="color: #e74c3c;">* Required Information</p>
+
+            <h3>Basic Information</h3>
+            <div class="form-section">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="id_email">Email *</label></td>
+                        <td><input type="email" name="email" id="id_email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_password">Password *</label></td>
+                        <td><input type="password" name="password" id="id_password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_retype_password">Retype Password *</label></td>
+                        <td><input type="password" name="retype_password" id="id_retype_password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_fname">First Name *</label></td>
+                        <td><input type="text" name="firstname" id="id_fname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_lname">Last Name *</label></td>
+                        <td><input type="text" name="lastname" id="id_lname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_phone_number">Phone Number *</label></td>
+                        <td><input type="tel" name="phonenumber" id="id_phone_number" placeholder="999-999-9999" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_address">Address *</label></td>
+                        <td><input type="text" name="address" id="id_address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_city">City *</label></td>
+                        <td><input type="text" name="city" id="id_city" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_province">Province *</label></td>
+                        <td>
+                            <select name="province" id="id_province" required>
+                                <option value="">Select Province</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="New Brunswick">New Brunswick</option>
+                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Prince Edward Island">Prince Edward Island</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_country">Country *</label></td>
+                        <td><input type="text" name="country" id="id_country" required></td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Education</h3>
+            <div class="form-section">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="id_school">School *</label></td>
+                        <td><input type="text" name="school" id="id_school" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_program">Program *</label></td>
+                        <td><input type="text" name="program" id="id_program" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_education_level">Education Level *</label></td>
+                        <td>
+                            <select name="education_level" id="id_education_level" required>
+                                <option value="">Select Education Level</option>
+                                <option value="B.Tech">B.Tech</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Degree">Degree</option>
+                                <option value="SSC">SSC</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <fieldset>
+                                <legend>Education Status</legend>
+                                <table>
+                                    <tr>
+                                        <td><input type="radio" name="education_status" id="id_graduated" value="graduated" required></td>
+                                        <td><label for="id_graduated">Graduated</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" name="education_status" id="id_current_enrolled" value="enrolled" required></td>
+                                        <td><label for="id_current_enrolled">Currently Enrolled</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" name="education_status" id="id_not_graduated" value="not_graduated" required></td>
+                                        <td><label for="id_not_graduated">Did Not Graduate</label></td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_graduation_date">Graduation Date *</label></td>
+                        <td><input type="date" name="graduation_date" id="id_graduation_date" required></td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Work Experience</h3>
+            <div class="form-section">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="id_employer">Employer:</label></td>
+                        <td><input type="text" name="employer" id="id_employer"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_jobtitle">Job Title:</label></td>
+                        <td><input type="text" name="job_title" id="id_jobtitle"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_job_duty">Job Duty:</label></td>
+                        <td><textarea name="job_duty" id="id_job_duty" rows="5" cols="38"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id_worked_year">Years Worked:</label></td>
+                        <td><input type="number" name="worked_year" id="id_worked_year" min="0" step="1"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Attachments</h3>
+            <div class="form-section">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="id_attachments">Attachments:</label></td>
+                        <td><input type="file" name="attachments" id="id_attachments"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Membership Registration Form</title>
+	<style type="text/css">
+		body{
+			background-color: lightgray;
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 20px;
+		}
+		.form_container{
+			width: 550px;
+			
+			background-color: #f0f3f4;
+			margin: auto;
+			border-radius: 10px;
+
+		}
+
+		form{
+			padding: 20px 30px;
+			width: 100%;
+
+		}
+		form h4{
+			margin-bottom: 10px;
+		}
+
+		form textarea{
+			width: 450px;
+			height: 70px;
+			background-color: #f0f3f4;
+			border-radius: 5px;
+		}
+
+		form section{
+			margin-top: 10px;
+
+		}
+		.form_table1{
+			width: 100%;
+			border-spacing: 0px 10px;
+			
+		}
+		.formtable1_input{
+			width: 200px;
+            height: 25px;
+            background-color: #f0f3f4;
+            border-radius: 5px;
+            border: 1px solid black;
+
+            
+		}
+		.formtable2_input{
+		    height: 30px;
+            width: 470px;
+            background-color: #f0f3f4;
+            border-radius: 5px;
+            border: 1px solid black;
+            
+		}
+		.form_table2 select{
+			height: 36.6px;
+            width: 470px;
+
+		}
+
+		.form_section3{
+			display: grid;
+			grid-template-columns: 0.5fr 0.5fr 0.5fr;
+		}
+		.form_section4{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+		}
+
+		.radio_buttons{
+			width: 20px;
+			height: 20px;
+			background-color: #f0f3f4;
+		}
+
+		.label_font{
+			font-size: 18px;
+		}
+
+		.button{
+			width: 90%;
+			text-align: center;
+			margin-top: 20px;
+		}
+		.button button{
+			
+			width: 200px;
+			height: 35px;
+			background-color: blue;
+			color: white;
+			border-radius: 5px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="form_container">
+		<form>
+			<h2>Membership Registration Form</h2>
+		    <p>Please fill out the form below to become a member.</p>
+		    <div class="form_section1">
+		    	<table class="form_table1">
+		    		<tr>
+		    			<th align="left">
+		    				<label for="id_firstname">First Name</label>
+		    			</th>
+		    			<th align="left">
+		    				<label for="id_lastname">Last Name</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<input type="text" name="firstname" id="id_firstname" placeholder="Enter your first name" required class="formtable1_input">
+		    			</td>
+		    			<td>
+		    				<input type="text" name="lastname" id="id_lastname" placeholder="Enter your last name" required class="formtable1_input">
+		    			</td>
+		    		</tr>
+		    		<tr>
+		    			<th align="left">
+		    				<label for="id_email">Email Address</label>
+		    			</th>
+		    			<th align="left">
+		    				<label for="id_phonenumber">Phone Number</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<input type="email" name="email" id="id_email" placeholder="Enter your Email Address" required class="formtable1_input">
+		    			</td>
+		    			<td>
+		    				<input type="tel" name="phonenumber" id="id_phonenumber" placeholder="Enter your Phone Number" required class="formtable1_input">
+		    			</td>
+		    		</tr>
+
+		    	</table>
+		    </div>
+		    <div class="form_section2">
+		    	<table class="form_table2">
+		    		<tr>
+		    			<th align="left">
+		    				<label for="id_address1">Address Line 1</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<input type="text" name="address1" id="id_address1" class="formtable2_input" placeholder="Enter your address line1">
+		    			</td>
+		    		</tr>
+
+		    		<tr>
+		    			<th align="left">
+		    				<label for="id_address2">Address Line 2</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<input type="text" name="address2" id="id_address2" class="formtable2_input" placeholder="Enter your address line2">
+		    			</td>
+		    		</tr>
+
+		    		<tr>
+		    			<th align="left">
+		    				<label for="id_country">
+		    					Country
+		    				</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<select name="country" id="id_country" required class="formtable2_input">
+		    				    <option value="" selected hidden disabled>
+		    					Select your country
+		    				    </option>
+		    				    <option value="India">India</option>
+		    				    <option value="Newzeland">Newzeland</option>
+		    				    <option value="Australia">Australia</option>
+		    				    <option value="Sri Lanka">Sri Lanka</option>
+		    				    <option value="England">England</option>
+		    				    <option value="U.S.A">U.S.A</option>
+		    				    <option value="Bangladesh">Bangladesh</option>
+		    			     </select>
+
+		    			</td>
+		    		</tr>
+		    	</table>
+		    </div>
+		    
+		    <h3>Membership Type</h3>
+		    <div class="form_section3">
+		    	<div class="grid-item">
+		    		<input type="radio" name="membership" id="id_basic" class="radio_buttons">
+		    		<label for="id_basic" class="label_font">Basic</label>
+		    	</div>
+
+		    	<div class="grid-item">
+		    		<input type="radio" name="membership" id="id_premium" class="radio_buttons">
+		    		<label for="id_premium" class="label_font">Premium</label>
+		    	</div>
+
+		    	<div class="grid-item">
+		    		<input type="radio" name="membership" id="id_elite" class="radio_buttons">
+		    		<label for="id_elite" class="label_font">Elite</label>
+		    	</div>
+		    </div>
+		    <h3>Interests</h3>
+		    <h4>Favorite Sports</h4>
+		    <div class="form_section4">
+		    	<div class="sec4-item">
+		    		<input type="checkbox" name="football" id="id_football" class="radio_buttons">
+		    		<label for="id_football" class="label_font">Football</label>
+
+		    	</div>
+
+		    	<div class="sec4-item">
+		    		<input type="checkbox" name="Basketball" id="id_basketball" class="radio_buttons">
+		    		<label for="id_basketball" class="label_font">Basketball</label>
+		    	</div>
+
+		    	<div class="sec4-item">
+		    		<input type="checkbox" name="baseball" id="id_baseball" class="radio_buttons">
+		    		<label for="id_baseball" class="label_font">Baseball</label>
+
+		    	</div>
+
+		    	<div class="sec4-item">
+		    		<input type="checkbox" name="Hockey" id="id_hockey" class="radio_buttons">
+		    		<label for="id_hockey" class="label_font">Hockey</label>
+
+		    	</div>
+
+		    	<div class="sec4-item">
+		    		<input type="checkbox" name="soccer" id="id_soccer" class="radio_buttons">
+		    		<label for="id_soccer" class="label_font">Soccer</label>
+
+		    	</div>
+
+		    	<div class="sec4-item">
+		    		<input type="checkbox" name="other" id="id_other" class="radio_buttons">
+		    		<label for="id_other" class="label_font">Other</label>
+
+		    	</div>
+		    </div>
+
+		    <label for="id_textarea">
+		    	<h3>Why do you want to become a member ?</h3>
+		    </label>
+		    <textarea name="member_reason" id="id_textarea" placeholder="Please tell us why you want to join"></textarea>
+		    <section>
+		        <input type="checkbox" name="terms" id="id_terms" required class="radio_buttons">
+		        <label for="id_terms" class="label_font">I accept the terms and conditions.</label>
+		    </section>
+
+		    <div class="button"> 
+		        <button type="button">Submit Registration</button>
+
+		    </div>
+		</form>
+	</div>
+
+</body>
+</html>

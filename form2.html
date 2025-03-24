@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gym Registration Form</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: lightgray;
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 20px;
+		}
+		.form_container{
+			width: 500px;
+			
+			background-color: #f0f3f4;
+			margin: auto;
+			border-radius: 10px;
+
+		}
+
+		form{
+			padding: 20px;
+			width: 100%;
+		}
+		form p,h4{
+			margin-top: 0px;
+		}
+		/*form h4{
+			margin: 0px;
+		}*/
+		.form_table{
+			width: 100%;
+		}
+
+		.form_table #id_firstname, #id_lastname{
+			height: 25px;
+			width: 200px;
+			padding: 5px;
+			background-color:#f0f3f4;
+			border-radius: 5px;
+			border: 1px solid black;
+
+		}
+		.form_table2{
+			width: 100%;
+			border-spacing: 0px 10px;
+		}
+		.form_table2 th{
+			text-align: left;
+		}
+		.form_table2 input{
+			width: 90%;
+			height: 20px;
+			padding: 5px;
+			background-color:#f0f3f4;
+			border-radius: 5px;
+			border: 1px solid black;
+		}
+		.form_table2 select{
+			width: 92%;
+			padding: 10px;
+			background-color:#f0f3f4;
+			border-radius: 5px;
+		}
+		.form_section3{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-gap: 10px;
+
+		}
+
+		section p{
+            width: 450px;
+            padding-top: 20px;
+		}
+
+		section input{
+			width: 20px;
+			margin: 0px;
+		}
+		.grid-item input{
+			    width: 20px;
+                height: 13px;
+                background-color:#f0f3f4;
+		}
+		.button{
+			width: 90%;
+			text-align: center;
+			margin-top: 20px;
+		}
+		.button button{
+			
+			width: 200px;
+			height: 30px;
+			background-color: blue;
+			color: white;
+			border-radius: 5px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="form_container">
+		<form>
+			<h2>Gym Registration Form</h2>
+		    <p>Fill out the information below to sign up for our gym facilities.</p>
+		    <div class="form_section">
+		    	<table class="form_table">
+		    		<tr>
+		    			<th align="left">
+		    				<label for="id_firstname">First Name</label>
+		    			</th>
+		    			<th align="left">
+		    				<label for="id_lastname">Last Name</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<input type="text" name="firstname" id="id_firstname" placeholder="Enter your first name" required>
+		    			</td>
+		    			<td>
+		    				<input type="text" name="lastname" id="id_lastname" placeholder="Enter your last name" required>
+		    			</td>
+		    		</tr>
+		    	</table>
+		    	
+		    	
+		    </div>
+		    <div class="form_section2">
+		    	<table class="form_table2">
+		    		<tr>
+		    		    <th>
+		    			    <label for="id_email">Email Address</label>
+		    		    </th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<input type="email" name="email" id="id_email" placeholder="Enter your Email" required>
+		    			</td>
+		    		</tr>
+		    		<tr>
+		    			<th>
+		    				<label for="id_phonenumber">Phone Number</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<input type="number" name="phonenumber" id="id_phonenumber" placeholder="Enter the phonenumber" maxlength="10" required>
+		    			</td>
+		    		</tr>
+		    		<tr>
+		    			<th>
+		    				<label for="if_dob">Date of Birth</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<input type="Date" name="DOB" id="id_dob" placeholder="YYYY-MM-DD">
+		    			</td>
+		    		</tr>
+		    		<tr>
+		    			<th>
+		    				<label for=:"id_fitness">Fitness Goal</label>
+		    			</th>
+		    		</tr>
+		    		<tr>
+		    			<td>
+		    				<select name="fitness" id="id_fitness" required>
+		    					<option value="" selected hidden disabled> Select Your fitness goal</option>
+		    					<option value="six_packs">Six pack</option>
+		    					<option value="Biseps">Biseps</option>
+		    					<option value="full_body_fit">full body fit</option>
+		    					
+		    				</select>
+		    			</td>
+		    		</tr>
+		    	</table>	
+		    </div>
+		    <h4>Preferred Workout Time</h4>
+		    <div class="form_section3">
+		    	<div class="grid-item">
+		    	    <input type="radio" name="workout_time" id="id_morning">
+		    	    <label for="id_morning">Morning</label>
+
+		    	</div>
+		    	<div class="grid-item">
+		    		<input type="radio" name="workout_time" id="id_afternoon">
+		    	    <label for="id_afternoon">Afternoon</label>
+		    	</div>
+		    	<div class="grid-item">
+		    		<input type="radio" name="workout_time" id="id_evening">
+		    	    <label for="id_evening">Evening</label>
+		    	</div>
+		    	<div class="grid-item">
+		    		<input type="radio" name="workout_time" id="id_night">
+		    	    <label for="id_night">Night</label>
+
+		    	</div>
+		    	<div class="grid-item">
+		    		<input type="radio" name="workout_time" id="id_othertime">
+		    	    <label for="id_othertime">Other Time</label>
+		    	</div>
+		    </div>
+
+		    <section>
+		    	<p>Please read and accept the terms and conditions to proceed with the registration.</p>
+
+		    	<input type="checkbox" name="terms" id="id_terms" required>
+		    	<label>I accept the terms and conditions.</label>
+		    </section>
+		    <div class="button"> 
+		        <button type="button">Submit Registration</button>
+
+		    </div>
+		</form>
+	</div>
+</body>
+</html>
